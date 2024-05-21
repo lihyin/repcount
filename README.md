@@ -4,6 +4,7 @@ Since there are potentially multiple persons on the scene, we will detect person
 
 Algorithm 1: Motion Detection Based
 
+```
 1. detect persons
 2. select the largest person's bounding box
 3. expand the bounding box by a scale (e.g. 2)
@@ -12,9 +13,11 @@ Algorithm 1: Motion Detection Based
     6. detect whether the motion area crosses the boundary
     7. if boundary crossed:
         8. increase repetition count
+```
 
 Algorithm 2: Key Points Detection Based
 
+```
 1. detect persons
 2. select the largest person's bounding box
 3. expand the bounding box by a scale (e.g. 2)
@@ -23,9 +26,11 @@ Algorithm 2: Key Points Detection Based
     6. detect whether a key point crosses the boundary
     7. if boundary crossed:
         8. increase repetition count
+```
 
 Algorithm 3: RepNet Based
 
+```
 1. detect persons
 2. select the largest person's bounding box
 3. expand the bounding box by a scale (e.g. 2)
@@ -33,5 +38,6 @@ Algorithm 3: RepNet Based
     5. run [repnet model](https://sites.google.com/view/repnet)
     6. if repetition detected:
         7. increase repetition count
+```
 
 Algorithm 4: Ensemble Algorithm 1, 2 and 3
